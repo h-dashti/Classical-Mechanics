@@ -1,0 +1,326 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9C03C1D-EEFD-428A-BB7F-6DB1E3E215E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MechanicalSimulations</RootNamespace>
+    <AssemblyName>MechanicalSimulations</AssemblyName>
+    <ApplicationIcon>Spring.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <StartupObject>MechanicalSimulations.Program</StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BilliradGame, Version=1.0.3788.38543, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\BilliradGame.dll</HintPath>
+    </Reference>
+    <Reference Include="RopeSimulation__GlUMethod, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\RopeSimulation__GlUMethod.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAboutMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAboutMe.Designer.cs">
+      <DependentUpon>FormAboutMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormMolecules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormMolecules.Designer.cs">
+      <DependentUpon>FormMolecules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormOrientedRectangles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormOrientedRectangles.Designer.cs">
+      <DependentUpon>FormOrientedRectangles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormTwoRollers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormTwoRollers.designer.cs">
+      <DependentUpon>FormTwoRollers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source Codes\OrientedRect.cs" />
+    <Compile Include="Source Codes\Path.cs" />
+    <Compile Include="From Simulations\Form2DSingleSpring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\Form2DSingleSpring.Designer.cs">
+      <DependentUpon>Form2DSingleSpring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormChaoticPendelum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormChaoticPendelum.Designer.cs">
+      <DependentUpon>FormChaoticPendelum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormClassicHe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormClassicHe.Designer.cs">
+      <DependentUpon>FormClassicHe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormDanglingStick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormDanglingStick.Designer.cs">
+      <DependentUpon>FormDanglingStick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormDoublePendelum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormDoublePendelum.Designer.cs">
+      <DependentUpon>FormDoublePendelum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormDoubleSpring2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormDoubleSpring2D.Designer.cs">
+      <DependentUpon>FormDoubleSpring2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormDoubleSprings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormDoubleSprings.Designer.cs">
+      <DependentUpon>FormDoubleSprings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMoreDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMoreDetail.Designer.cs">
+      <DependentUpon>FormMoreDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormRollerAndSpring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormRollerAndSpring.designer.cs">
+      <DependentUpon>FormRollerAndSpring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormRollerCoaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormRollerCoaster.Designer.cs">
+      <DependentUpon>FormRollerCoaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormSimpleCollision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormSimpleCollision.Designer.cs">
+      <DependentUpon>FormSimpleCollision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormSingleSpring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormSingleSpring.Designer.cs">
+      <DependentUpon>FormSingleSpring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormPendelumAndCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormPendelumAndCart.Designer.cs">
+      <DependentUpon>FormPendelumAndCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From Simulations\FormTwoSpringsOverHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From Simulations\FormTwoSpringsOverHead.Designer.cs">
+      <DependentUpon>FormTwoSpringsOverHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source Codes\Plot.cs" />
+    <Compile Include="Source Codes\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="From Simulations\Form2DSingleSpring.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form2DSingleSpring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormChaoticPendelum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormChaoticPendelum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormClassicHe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormClassicHe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormDanglingStick.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDanglingStick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormDoublePendelum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDoublePendelum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormDoubleSpring2D.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDoubleSpring2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormDoubleSprings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDoubleSprings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMoreDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMoreDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormSimpleCollision.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSimpleCollision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormSingleSpring.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSingleSpring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormPendelumAndCart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPendelumAndCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormTwoSpringsOverHead.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTwoSpringsOverHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Source Codes\RectangleD.cs" />
+    <Compile Include="Source Codes\Vector2D.cs" />
+    <Compile Include="Source Codes\Vector3D.cs" />
+    <Compile Include="Source Codes\Polygon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAboutMe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAboutMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormMolecules.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMolecules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormOrientedRectangles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormOrientedRectangles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormRollerAndSpring.resx">
+      <DependentUpon>FormRollerAndSpring.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormRollerCoaster.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRollerCoaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From Simulations\FormTwoRollers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTwoRollers.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spring.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
